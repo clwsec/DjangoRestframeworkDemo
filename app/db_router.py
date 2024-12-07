@@ -1,6 +1,6 @@
 from app.constants import AppConfigInfo
 
-
+# TODO: 删除冗余日志 + 确认migrate是否正常(default数据库)
 class RegionRouter:
     def db_for_read(self, model, **hints):
         print("**************model: ", model)
