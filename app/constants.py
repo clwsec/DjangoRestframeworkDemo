@@ -15,5 +15,5 @@ class AppConfigInfo:
         'eastgood': 'east_db',
         'westgood': 'west_db',
         'centralgood': 'central_db',
-        'default': 'default',
+        'default': 'default', # 配置了，但是因为db_router的allow_migrate逻辑，所以不会在default数据库中生成相关的Good表
     }
