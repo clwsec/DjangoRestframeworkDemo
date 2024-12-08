@@ -85,32 +85,59 @@ WSGI_APPLICATION = 'myapp.wsgi.application'
 #         'PORT': '5432',
 #     },
 # }
-
+# 'default': {
+#     'ENGINE': 'django.db.backends.sqlite3',
+#     'NAME': BASE_DIR / 'default.sqlite3',
+# },
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'default.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'default_db',
+        'USER': 'app_user',
+        'PASSWORD': 'app_default_20241208',
+        'HOST': 'localhost',
+        'PORT': '5432',
     },
     'south_db': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'south_db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'south_db',
+        'USER': 'app_user',
+        'PASSWORD': 'app_default_20241208',
+        'HOST': 'localhost',
+        'PORT': '5432',
     },
     'north_db': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'north_db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'north_db',
+        'USER': 'app_user',
+        'PASSWORD': 'app_default_20241208',
+        'HOST': 'localhost',
+        'PORT': '5432',
     },
     'east_db': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'east_db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'east_db',
+        'USER': 'app_user',
+        'PASSWORD': 'app_default_20241208',
+        'HOST': 'localhost',
+        'PORT': '5432',
     },
     'west_db': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'west_db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'west_db',
+        'USER': 'app_user',
+        'PASSWORD': 'app_default_20241208',
+        'HOST': 'localhost',
+        'PORT': '5432',
     },
     'central_db': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'central_db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'central_db',
+        'USER': 'app_user',
+        'PASSWORD': 'app_default_20241208',
+        'HOST': 'localhost',
+        'PORT': '5432',
     },
 }
 

@@ -1,7 +1,7 @@
 from django.db import models
 from app.constants import AppConfigInfo
 
-# 多数据库实现
+# 多数据库实现，注意每个数据库要单独执行migrate才会生成对应的表
 
 
 class Good(models.Model):
