@@ -17,4 +17,4 @@ jobs:
           pip install -r requirements.txt
           pip install pylint 
       - name: run Pylint
-        run: pylint app/ myapp/
+        run: pylint app/ myapp/ --ignore=migrations --ignore=app/migrations
